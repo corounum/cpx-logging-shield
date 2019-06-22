@@ -6,3 +6,5 @@ firmware/*pem
 firmware/*
 venv/*
 setup/*
+hardware/sources/*b#*
+hardware/sources/*s#*
