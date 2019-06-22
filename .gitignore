@@ -1,0 +1,8 @@
+.DS_Store
+.vscode
+hardware/*b#*
+hardware/*s#*
+firmware/*pem
+firmware/*
+venv/*
+setup/*
