@@ -7662,9 +7662,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="GNDTAP" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="U$29" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$40" library="microbuilder" deviceset="FRAME_A3_ADAFRUIT" device=""/>
-<part name="U$41" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-0603-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37414/1" value="10uF"/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0603-16V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1.0uF"/>
@@ -7697,12 +7695,12 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="U1" library="ESP32-WROOM-32D" deviceset="ESP32-WROOM-32D" device=""/>
 <part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$7" library="microbuilder" deviceset="GND" device=""/>
-<part name="Q3" library="microbuilder" deviceset="CRYSTAL" device="8.0X3.8" value="32.768"/>
+<part name="XTAL" library="microbuilder" deviceset="CRYSTAL" device="8.0X3.8" value="32.768"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-0603-6.3V-20%" package3d_urn="urn:adsk.eagle:package:37414/1" value="10uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="B1" library="microbuilder" deviceset="BATTERY" device="CR1220_SMT" value="CR1220"/>
+<part name="CR1220" library="microbuilder" deviceset="BATTERY" device="CR1220_SMT" value="CR1220"/>
 <part name="8523" library="microbuilder" deviceset="RTC_PCF8523" device="T"/>
 <part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="U$5" library="microbuilder" deviceset="3.3V" device=""/>
@@ -7782,16 +7780,10 @@ This eliminates power switching circuitry.</text>
 <instance part="GND13" gate="1" x="195.58" y="40.64" smashed="yes">
 <attribute name="VALUE" x="193.04" y="38.1" size="1.778" layer="96"/>
 </instance>
-<instance part="U$29" gate="G$1" x="208.28" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="209.804" y="37.084" size="1.27" layer="96" rot="R180"/>
-</instance>
 <instance part="U$40" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="298.45" y="15.24" size="2.54" layer="94" font="vector"/>
 <attribute name="LAST_DATE_TIME" x="298.45" y="10.16" size="2.286" layer="94" font="vector"/>
 <attribute name="SHEET" x="357.505" y="10.16" size="2.54" layer="94" font="vector"/>
-</instance>
-<instance part="U$41" gate="G$1" x="213.36" y="38.1" smashed="yes" rot="R180">
-<attribute name="VALUE" x="214.884" y="37.084" size="1.27" layer="96" rot="R180"/>
 </instance>
 <instance part="GND8" gate="1" x="342.9" y="35.56" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="345.44" y="33.02" size="1.778" layer="96" rot="MR0"/>
@@ -7907,7 +7899,7 @@ This eliminates power switching circuitry.</text>
 <instance part="U$7" gate="G$1" x="160.02" y="10.16" smashed="yes">
 <attribute name="VALUE" x="158.496" y="7.62" size="1.27" layer="96"/>
 </instance>
-<instance part="Q3" gate="G$1" x="81.28" y="30.48" smashed="yes" rot="MR270">
+<instance part="XTAL" gate="G$1" x="81.28" y="30.48" smashed="yes" rot="MR270">
 <attribute name="NAME" x="78.74" y="33.02" size="1.27" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="85.09" y="33.02" size="1.27" layer="96" rot="MR270"/>
 </instance>
@@ -7924,7 +7916,7 @@ This eliminates power switching circuitry.</text>
 <instance part="GND2" gate="1" x="27.94" y="38.1" smashed="yes">
 <attribute name="VALUE" x="25.4" y="35.56" size="1.778" layer="96"/>
 </instance>
-<instance part="B1" gate="G$1" x="73.66" y="22.86" smashed="yes" rot="R90">
+<instance part="CR1220" gate="G$1" x="73.66" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.485" y="20.32" size="1.27" layer="95" rot="R90"/>
 <attribute name="VALUE" x="78.74" y="20.32" size="1.27" layer="96" rot="R90"/>
 </instance>
@@ -8011,7 +8003,7 @@ This eliminates power switching circuitry.</text>
 <segment>
 <wire x1="73.66" y1="20.32" x2="73.66" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<pinref part="B1" gate="G$1" pin="-"/>
+<pinref part="CR1220" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -8027,16 +8019,6 @@ This eliminates power switching circuitry.</text>
 </segment>
 </net>
 <net name="3.3V" class="0">
-<segment>
-<pinref part="3.3VTAP" gate="G$1" pin="SEW"/>
-<wire x1="208.28" y1="40.64" x2="208.28" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$29" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="U$41" gate="G$1" pin="3.3V"/>
-<pinref part="3V3TAP2" gate="G$1" pin="SEW"/>
-<wire x1="213.36" y1="40.64" x2="213.36" y2="45.72" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <wire x1="83.82" y1="187.96" x2="86.36" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="187.96" x2="93.98" y2="187.96" width="0.1524" layer="91"/>
@@ -8325,7 +8307,7 @@ This eliminates power switching circuitry.</text>
 </net>
 <net name="XI" class="0">
 <segment>
-<pinref part="Q3" gate="G$1" pin="1"/>
+<pinref part="XTAL" gate="G$1" pin="1"/>
 <pinref part="8523" gate="G$1" pin="XI"/>
 <wire x1="81.28" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="33.02" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
@@ -8335,14 +8317,14 @@ This eliminates power switching circuitry.</text>
 <net name="XO" class="0">
 <segment>
 <wire x1="81.28" y1="27.94" x2="66.04" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="2"/>
+<pinref part="XTAL" gate="G$1" pin="2"/>
 <pinref part="8523" gate="G$1" pin="XO"/>
 </segment>
 </net>
 <net name="VBAT1" class="0">
 <segment>
 <wire x1="73.66" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="B1" gate="G$1" pin="+"/>
+<pinref part="CR1220" gate="G$1" pin="+"/>
 <pinref part="8523" gate="G$1" pin="VBAT"/>
 </segment>
 </net>
