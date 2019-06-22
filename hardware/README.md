@@ -6,7 +6,7 @@ This "shield" for the Circuit Playground Express integrates:
 * A BME680 temperature/pressure/VOC/eCO2 sensor
 * A PCF8523 real time clock (for timestamping readings) and CR1220 battery (for clock retention)
 
-In addition, a QUIIC connector is included for attaching Sparkfun-produced I2C modules. 
+In addition, a QUIIC connector is included for attaching Sparkfun-produced I2C modules. The bottom-mounted FTDI header can be soldered for development, and used as pogopin landing pads for production with the appropriate jig.
 
 The board ONLY takes power from a connected CPX; it draws from VOUT, which is EITHER connected to USB or battery. The shield has its own AP2112 voltage regulator.
 
