@@ -3408,6 +3408,54 @@ Package for devices meant to mate to an FTDI connector.
 <hole x="-5.08" y="0" drill="1.4"/>
 <hole x="5.08" y="0" drill="1.4"/>
 </package>
+<package name="1X04_1MM_RA" urn="urn:adsk.eagle:footprint:37714/1" library_version="1">
+<description>&lt;h3&gt;SMD- 4 Pin Right Angle &lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-1.5" y1="-4.6" x2="1.5" y2="-4.6" width="0.254" layer="21"/>
+<wire x1="-3" y1="-2" x2="-3" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-0.35" x2="3" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="3" y1="-0.35" x2="3" y2="-2" width="0.254" layer="21"/>
+<wire x1="-3" y1="-0.35" x2="-2.25" y2="-0.35" width="0.254" layer="21"/>
+<circle x="-2.5" y="0.3" radius="0.1414" width="0.4" layer="21"/>
+<smd name="NC2" x="-2.8" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="NC1" x="2.8" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="1" x="-1.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="2" x="-0.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="3" x="0.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="4" x="1.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="1X04_1MM_RA_STRESSRELIEF" urn="urn:adsk.eagle:footprint:37987/1" library_version="1">
+<description>Qwiic connector with milled cutout. Sliding the cable into this slot prevents the cable from coming unplugged.</description>
+<wire x1="-1.5" y1="-4.6" x2="1.5" y2="-4.6" width="0.254" layer="21"/>
+<wire x1="-3" y1="-2" x2="-3" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="2.25" y1="-0.35" x2="3" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="3" y1="-0.35" x2="3" y2="-2" width="0.254" layer="21"/>
+<wire x1="-3" y1="-0.35" x2="-2.25" y2="-0.35" width="0.254" layer="21"/>
+<wire x1="-2" y1="-10.16" x2="-2" y2="-8" width="0.3048" layer="20"/>
+<wire x1="-2" y1="-8" x2="4" y2="-8" width="0.3048" layer="20"/>
+<wire x1="4" y1="-8" x2="4" y2="-6" width="0.3048" layer="20"/>
+<wire x1="4" y1="-6" x2="-4" y2="-6" width="0.3048" layer="20"/>
+<wire x1="-4" y1="-6" x2="-4" y2="-10.16" width="0.3048" layer="20"/>
+<circle x="-2.5" y="0.3" radius="0.1414" width="0.4" layer="21"/>
+<smd name="NC2" x="-2.8" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="NC1" x="2.8" y="-3.675" dx="1.2" dy="2" layer="1"/>
+<smd name="1" x="-1.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="2" x="-0.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="3" x="0.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<smd name="4" x="1.5" y="0" dx="0.6" dy="1.35" layer="1"/>
+<text x="-1.397" y="-2.159" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-4" y1="-8" x2="4" y2="-6" layer="46"/>
+<rectangle x1="-4" y1="-10" x2="-2" y2="-8" layer="46"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X06-SMD_RA_MALE" urn="urn:adsk.eagle:package:38004/1" type="box" library_version="1">
@@ -3524,6 +3572,25 @@ Example device(s):
 <packageinstance name="6_PIN_SERIAL_TARGET_SIDE_RA_SMT"/>
 </packageinstances>
 </package3d>
+<package3d name="1X04_1MM_RA" urn="urn:adsk.eagle:package:38096/1" type="box" library_version="1">
+<description>SMD- 4 Pin Right Angle 
+Specifications:
+Pin count:4
+Pin pitch:0.1"
+
+Example device(s):
+CONN_04
+</description>
+<packageinstances>
+<packageinstance name="1X04_1MM_RA"/>
+</packageinstances>
+</package3d>
+<package3d name="1X04_1MM_RA_STRESSRELIEF" urn="urn:adsk.eagle:package:38303/1" type="box" library_version="1">
+<description>Qwiic connector with milled cutout. Sliding the cable into this slot prevents the cable from coming unplugged.</description>
+<packageinstances>
+<packageinstance name="1X04_1MM_RA_STRESSRELIEF"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM" urn="urn:adsk.eagle:symbol:37587/1" library_version="1">
@@ -3558,6 +3625,28 @@ It is used to mate with our FTDI Basic serial programmers using the Arduino IDE.
 <pin name="VCC" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="CTS" x="5.08" y="5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="GND" x="5.08" y="7.62" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="I2C_STANDARD-1" urn="urn:adsk.eagle:symbol:37986/1" library_version="1">
+<description>&lt;h3&gt;SparkFun I&lt;sup&gt;2&lt;/sup&gt;C Standard Pinout Header&lt;/h3&gt;
+&lt;p&gt;SparkFun has standardized on a pinout for all I&lt;sup&gt;2&lt;/sup&gt;C based sensor breakouts.&lt;br&gt;</description>
+<wire x1="3.81" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-4.572" y="2.54" size="1.778" layer="94" font="vector" align="center-left">SDA</text>
+<text x="-4.572" y="0" size="1.778" layer="94" font="vector" align="center-left">VCC</text>
+<text x="-4.572" y="-2.54" size="1.778" layer="94" font="vector" align="center-left">GND</text>
+<text x="-4.572" y="5.08" size="1.778" layer="94" font="vector" align="center-left">SCL</text>
+<pin name="GND" x="7.62" y="-2.54" visible="pad" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="VCC" x="7.62" y="0" visible="pad" length="middle" direction="pwr" swaplevel="1" rot="R180"/>
+<pin name="SDA" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="SCL" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3721,6 +3810,47 @@ For reference (or to suit your programming needs) check out these designs:
 <technology name="">
 <attribute name="PROD_ID" value="CONN-08971" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="QWIIC_CONNECTOR" urn="urn:adsk.eagle:component:38395/1" prefix="J" uservalue="yes" library_version="1">
+<description>&lt;h3&gt;SparkFun I&lt;sup&gt;2&lt;/sup&gt;C Standard Qwiic Connector&lt;/h3&gt;
+An SMD 1mm pitch JST connector makes it easy and quick (get it? Qwiic?) to connect I&lt;sup&gt;2&lt;/sup&gt;C devices to each other. The &lt;a href=”http://www.sparkfun.com/qwiic”&gt;Qwiic system&lt;/a&gt; enables fast and solderless connection between popular platforms and various sensors and actuators.
+
+&lt;br&gt;&lt;br&gt;
+
+We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a&gt;, &lt;a href=”https://www.sparkfun.com/products/14205”&gt;100mm&lt;/a&gt;, &lt;a href=”https://www.sparkfun.com/products/14206”&gt;50mm&lt;/a&gt;, and &lt;a href=”https://www.sparkfun.com/products/14207”&gt;breadboard friendly&lt;/a&gt; Qwiic cables. We also offer &lt;a href=”https://www.sparkfun.com/products/14323”&gt;10 pcs strips&lt;/a&gt; the SMD connectors.</description>
+<gates>
+<gate name="J1" symbol="I2C_STANDARD-1" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="JS-1MM" package="1X04_1MM_RA">
+<connects>
+<connect gate="J1" pin="GND" pad="1"/>
+<connect gate="J1" pin="SCL" pad="4"/>
+<connect gate="J1" pin="SDA" pad="3"/>
+<connect gate="J1" pin="VCC" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38096/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SR" package="1X04_1MM_RA_STRESSRELIEF">
+<connects>
+<connect gate="J1" pin="GND" pad="1"/>
+<connect gate="J1" pin="SCL" pad="4"/>
+<connect gate="J1" pin="SDA" pad="3"/>
+<connect gate="J1" pin="VCC" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38303/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4769,143 +4899,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Aesthetics" urn="urn:adsk.eagle:library:507">
-<description>&lt;h3&gt;SparkFun Aesthetics&lt;/h3&gt;
-This library contiains non-functional items such as logos, build/ordering notes, frame blocks, etc. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CREATIVE_COMMONS" urn="urn:adsk.eagle:footprint:37005/1" library_version="1">
-<description>&lt;h3&gt;Creative Commons License Template&lt;/h3&gt;
-&lt;p&gt;CC BY-SA 4.0 License with &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;link to license&lt;/a&gt; and placeholder for designer name.&lt;/p&gt;
-&lt;p&gt;Devices using:
-&lt;ul&gt;&lt;li&gt;FRAME_LEDGER&lt;/li&gt;
-&lt;li&gt;FRAME_LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
-</package>
-<package name="DUMMY" urn="urn:adsk.eagle:footprint:37006/1" library_version="1">
-<description>&lt;h3&gt;Dummy Footprint&lt;/h3&gt;
-&lt;p&gt;NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.&lt;/p&gt;
-
-&lt;p&gt;Devices using:
-&lt;ul&gt;&lt;li&gt;BADGERHACK_LOGO&lt;/li&gt;
-&lt;li&gt;FRAME-LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-</package>
-</packages>
-<packages3d>
-<package3d name="CREATIVE_COMMONS" urn="urn:adsk.eagle:package:37121/1" type="box" library_version="1">
-<description>Creative Commons License Template
-CC BY-SA 4.0 License with link to license and placeholder for designer name.
-Devices using:
-FRAME_LEDGER
-FRAME_LETTER</description>
-<packageinstances>
-<packageinstance name="CREATIVE_COMMONS"/>
-</packageinstances>
-</package3d>
-<package3d name="DUMMY" urn="urn:adsk.eagle:package:37104/1" type="box" library_version="1">
-<description>Dummy Footprint
-NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.
-
-Devices using:
-BADGERHACK_LOGO
-FRAME-LETTER</description>
-<packageinstances>
-<packageinstance name="DUMMY"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="FRAME-LETTER" urn="urn:adsk.eagle:symbol:37003/1" library_version="1">
-<description>&lt;h3&gt;Schematic Frame - Letter&lt;/h3&gt;
-&lt;p&gt;Standard 8.5x11 US Ledger frame&lt;/p&gt;
-&lt;p&gt;Devices using&lt;ul&gt;&lt;li&gt;FRAME-LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
-<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
-</symbol>
-<symbol name="DOCFIELD" urn="urn:adsk.eagle:symbol:37004/1" library_version="1">
-<description>&lt;h3&gt;Schematic Documentation Field&lt;/h3&gt;
-&lt;p&gt;Autofilling schematic symbol-layer info including board name, designer, revision, and save date.&lt;/p&gt;
-&lt;p&gt;Devices using:
-&lt;ul&gt;&lt;li&gt;FRAME-LEDGER&lt;/li&gt;
-&lt;li&gt;FRAME-LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.254" layer="94"/>
-<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.254" layer="94"/>
-<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.254" layer="94"/>
-<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.254" layer="94"/>
-<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.254" layer="94"/>
-<text x="1.27" y="1.27" size="2.54" layer="94" font="vector">Date:</text>
-<text x="12.7" y="1.27" size="2.54" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
-<text x="72.39" y="1.27" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="86.36" y="1.27" size="2.54" layer="94" font="vector">&gt;SHEET</text>
-<text x="88.9" y="11.43" size="2.54" layer="94" font="vector">REV:</text>
-<text x="1.524" y="17.78" size="2.54" layer="94" font="vector">TITLE:</text>
-<text x="15.494" y="17.78" size="2.7432" layer="94" font="vector">&gt;DRAWING_NAME</text>
-<text x="2.54" y="31.75" size="1.9304" layer="94">Released under the Creative Commons</text>
-<text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
-<text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FRAME-LETTER" urn="urn:adsk.eagle:component:37169/1" prefix="FRAME" library_version="1">
-<description>&lt;h3&gt;Schematic Frame - Letter&lt;/h3&gt;
-&lt;p&gt;Standard 8.5x11 US Letter frame&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="FRAME-LETTER" x="0" y="0"/>
-<gate name="V" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
-</gates>
-<devices>
-<device name="" package="CREATIVE_COMMONS">
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37121/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NO_PACKAGE" package="DUMMY">
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37104/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DESIGNER" value="Nobody" constant="no"/>
-<attribute name="VERSION" value="v01" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4923,7 +4916,6 @@ FRAME-LETTER</description>
 <part name="CPXRXI" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="SDA" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
-<part name="IO10" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="IO9" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="D6" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
 <part name="IO12" library="microbuilder" deviceset="SEWTAP" device="-ALLIGATOR"/>
@@ -4978,7 +4970,9 @@ FRAME-LETTER</description>
 <part name="BME680" library="microbuilder" deviceset="BME280" device="" value="BME280"/>
 <part name="U$12" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="FRAME1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-LETTER" device="NO_PACKAGE" package3d_urn="urn:adsk.eagle:package:37104/1"/>
+<part name="QUIIC" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="QWIIC_CONNECTOR" device="JS-1MM" package3d_urn="urn:adsk.eagle:package:38096/1"/>
+<part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$14" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4989,7 +4983,8 @@ Power must be provided to the CPX
 This eliminates power switching circuitry.</text>
 <wire x1="12.7" y1="187.96" x2="86.36" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="86.36" y1="187.96" x2="109.22" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
-<wire x1="109.22" y1="187.96" x2="370.84" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="109.22" y1="187.96" x2="320.04" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="320.04" y1="187.96" x2="370.84" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="203.2" y1="248.92" x2="203.2" y2="20.32" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="109.22" y1="187.96" x2="109.22" y2="114.3" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="109.22" y1="114.3" x2="109.22" y2="30.48" width="0.1524" layer="94" style="shortdash"/>
@@ -5033,6 +5028,9 @@ This eliminates complexity in the power
 circuit, and prevents accidents where 
 power is applied incorrectly or in multiple 
 places.</text>
+<wire x1="320.04" y1="187.96" x2="322.58" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="322.58" y1="187.96" x2="322.58" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
+<text x="330.2" y="243.84" size="3.81" layer="94" font="vector" ratio="12">QUIIC</text>
 </plain>
 <instances>
 <instance part="3V3TAP2" gate="G$1" x="368.3" y="160.02" smashed="yes" rot="R90">
@@ -5055,9 +5053,6 @@ places.</text>
 </instance>
 <instance part="P+2" gate="VCC" x="355.6" y="152.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="358.14" y="154.94" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="IO10" gate="G$1" x="254" y="162.56" smashed="yes">
-<attribute name="NAME" x="254" y="162.56" size="1.27" layer="95" font="vector"/>
 </instance>
 <instance part="IO9" gate="G$1" x="254" y="160.02" smashed="yes">
 <attribute name="NAME" x="254" y="160.02" size="1.27" layer="95" font="vector"/>
@@ -5244,10 +5239,15 @@ places.</text>
 <instance part="U$9" gate="G$1" x="88.9" y="160.02" smashed="yes">
 <attribute name="VALUE" x="87.376" y="161.036" size="1.27" layer="96"/>
 </instance>
-<instance part="FRAME1" gate="V" x="233.68" y="33.02" smashed="yes">
-<attribute name="LAST_DATE_TIME" x="246.38" y="34.29" size="2.54" layer="94" font="vector"/>
-<attribute name="SHEET" x="320.04" y="34.29" size="2.54" layer="94" font="vector"/>
-<attribute name="DRAWING_NAME" x="249.174" y="50.8" size="2.7432" layer="94" font="vector"/>
+<instance part="QUIIC" gate="J1" x="337.82" y="218.44" smashed="yes">
+<attribute name="VALUE" x="332.74" y="213.106" size="1.778" layer="96" font="vector" align="top-left"/>
+<attribute name="NAME" x="332.74" y="226.314" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="U$11" gate="G$1" x="360.68" y="228.6" smashed="yes">
+<attribute name="VALUE" x="359.156" y="229.616" size="1.27" layer="96"/>
+</instance>
+<instance part="U$14" gate="G$1" x="355.6" y="210.82" smashed="yes">
+<attribute name="VALUE" x="354.076" y="208.28" size="1.27" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -5335,6 +5335,13 @@ places.</text>
 <pinref part="U$4" gate="G$1" pin="GND"/>
 <pinref part="BME680" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="QUIIC" gate="J1" pin="GND"/>
+<wire x1="345.44" y1="215.9" x2="353.06" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="GND"/>
+<wire x1="353.06" y1="215.9" x2="355.6" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="215.9" x2="355.6" y2="213.36" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -5403,6 +5410,13 @@ places.</text>
 <wire x1="88.9" y1="152.4" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="3.3V"/>
 </segment>
+<segment>
+<pinref part="QUIIC" gate="J1" pin="VCC"/>
+<wire x1="345.44" y1="218.44" x2="353.06" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="218.44" x2="360.68" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="218.44" x2="360.68" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="D12_A0" class="0">
 <segment>
@@ -5448,6 +5462,11 @@ places.</text>
 <pinref part="BME680" gate="G$1" pin="SCK"/>
 <label x="78.74" y="147.32" size="1.016" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="QUIIC" gate="J1" pin="SCL"/>
+<wire x1="345.44" y1="223.52" x2="353.06" y2="223.52" width="0.1524" layer="91"/>
+<label x="353.06" y="223.52" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -5476,6 +5495,11 @@ places.</text>
 <label x="66.04" y="144.78" size="1.778" layer="95"/>
 <pinref part="BME680" gate="G$1" pin="SDI"/>
 <label x="78.74" y="144.78" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="QUIIC" gate="J1" pin="SDA"/>
+<wire x1="345.44" y1="220.98" x2="353.06" y2="220.98" width="0.1524" layer="91"/>
+<label x="353.06" y="220.98" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ESP32TXO" class="0">
@@ -5519,13 +5543,6 @@ places.</text>
 <label x="243.84" y="160.02" size="1.778" layer="95"/>
 <pinref part="IO9" gate="G$1" pin="SEW"/>
 <wire x1="228.6" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="D10_A3" class="0">
-<segment>
-<wire x1="233.68" y1="162.56" x2="254" y2="162.56" width="0.1524" layer="91"/>
-<label x="243.84" y="162.56" size="1.778" layer="95"/>
-<pinref part="IO10" gate="G$1" pin="SEW"/>
 </segment>
 </net>
 <net name="RESET" class="0">
