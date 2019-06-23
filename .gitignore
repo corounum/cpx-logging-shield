@@ -3,7 +3,8 @@
 hardware/*b#*
 hardware/*s#*
 firmware/*pem
-firmware/*
+firmware/*csr
+firmware/umqtt
 venv/*
 setup/*
 hardware/sources/*b#*

@@ -3,3 +3,4 @@ source venv/bin/activate
 
 pip install --upgrade pip
 pip install adafruit-ampy
+pip3 install rshell
