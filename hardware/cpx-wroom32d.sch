@@ -5031,6 +5031,8 @@ places.</text>
 <wire x1="320.04" y1="187.96" x2="322.58" y2="187.96" width="0.1524" layer="94" style="shortdash"/>
 <wire x1="322.58" y1="187.96" x2="322.58" y2="248.92" width="0.1524" layer="94" style="shortdash"/>
 <text x="330.2" y="243.84" size="3.81" layer="94" font="vector" ratio="12">QUIIC</text>
+<text x="218.44" y="147.32" size="1.778" layer="94" font="vector">Valid external GPIO wake-up pins are:
+0,2,4,12-15,25-27,32-39</text>
 </plain>
 <instances>
 <instance part="3V3TAP2" gate="G$1" x="368.3" y="160.02" smashed="yes" rot="R90">
@@ -5537,14 +5539,6 @@ places.</text>
 <label x="132.08" y="114.3" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D9_A2" class="0">
-<segment>
-<wire x1="228.6" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
-<label x="243.84" y="160.02" size="1.778" layer="95"/>
-<pinref part="IO9" gate="G$1" pin="SEW"/>
-<wire x1="228.6" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RESET" class="0">
 <segment>
 <wire x1="111.76" y1="215.9" x2="111.76" y2="208.28" width="0.1524" layer="91"/>
@@ -5725,6 +5719,19 @@ places.</text>
 <wire x1="63.5" y1="154.94" x2="78.74" y2="154.94" width="0.1524" layer="91"/>
 <label x="66.04" y="154.94" size="1.778" layer="95"/>
 <pinref part="BME680" gate="G$1" pin="SDO"/>
+</segment>
+</net>
+<net name="WAKEUP" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IO25"/>
+<wire x1="175.26" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
+<label x="182.88" y="96.52" size="1.016" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="228.6" y1="160.02" x2="254" y2="160.02" width="0.1524" layer="91"/>
+<label x="243.84" y="160.02" size="1.778" layer="95"/>
+<pinref part="IO9" gate="G$1" pin="SEW"/>
+<wire x1="228.6" y1="160.02" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

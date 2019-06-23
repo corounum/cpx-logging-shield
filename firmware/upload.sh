@@ -14,6 +14,6 @@ ampy -d 0.7 -p /dev/cu.SLAB_USBtoUART put main.py
 echo "Removing main.py"
 rm -f main.py
 
-echo "Resetting ESP32"
-ampy -d 0.7 -p /dev/cu.SLAB_USBtoUART reset
+#echo "Resetting ESP32"
+#ampy -d 0.7 -p /dev/cu.SLAB_USBtoUART reset
 echo "Done"
